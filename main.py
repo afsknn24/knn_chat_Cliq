@@ -26,7 +26,7 @@ class WebHookPayload(BaseModel):
     text:str
 
 # Inicialización para solicitar el token de acceso a Zoho WorkDrive.
-@app.get("/")
+@app.get("/auth/start")
 async def start_auth():
     auth_url=f"https://accounts.zoho.com/oauth/v2/auth?scope=WorkDrive.files.ALL,ZohoFiles.files.READ&client_id={CLIENT_ID}&response_type=code&access_type=offline&redirect_uri={REDIRECT_URI}&state=register"
     return RedirectResponse(auth_url)
