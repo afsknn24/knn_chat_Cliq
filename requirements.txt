@@ -4,6 +4,7 @@ python-dotenv~=1.1.0
 langchain-anthropic~=0.3.13
 langchain-core~=0.3.59
 langchain~=0.3.25
+langchain-hugginface
 langchain-community~=0.3.23
 requests~=2.32.3
 uvicorn
